@@ -320,10 +320,10 @@ textarea {
     cursor: pointer;
 }
 
-    /* .head {
-    text-align: right;
-    max-width:;    
-} */
+.head {
+     text-align: right; 
+     width:80%;    
+} 
 .homes , .link1, .link2, .link3{
     text-decoration: none;
     color: black;
@@ -333,16 +333,18 @@ textarea {
 }
 
 .line {
-    width: 400px;
+    width: 100px; 
     height: 1px;
     background-color: rgb(8, 40, 223);
-    /* margin-left: 18.5rem */
+    margin-left: -3.5rem;
 }
 
 .line-Wrapper{
     display: flex;
-    max-width: 70%;
-}
+    justify-content: center; 
+    max-width: 10%;
+    
+} 
 .first-div {
     display: flex;
     flex-direction: column-reverse;
@@ -354,8 +356,14 @@ textarea {
     width: 70%;
 }
 .images{
-    width: 60%;
+    width: 50%;
 }
+.first-img {
+    width: 50%;
+}
+/* .image2 {
+    width: 5%;
+} */
 .div-1 {
     display: flex;
     flex-direction: column;
@@ -408,7 +416,7 @@ textarea {
 .section {
     display:flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: space-around; */
     width: 70%;
     /* margin-top: 1rem; */
@@ -428,6 +436,8 @@ textarea {
 .section{
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .section .div{
     display: flex;
@@ -455,71 +465,6 @@ textarea {
 }
 }
 
-@media (max-width: 768px) {
-    main {
-        width: 100%;
-    }
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-.head {
-    max-width: 80%;
-}
-.line-Wrapper{
-    display: flex;
-    max-width: 80%;
-    justify-content: flex-end;
-    margin-left: 4.5rem;
-}
-.line {
-    width: 400px;
-    height: 1px;
-    background-color: rgb(8, 40, 223);
-    /* margin-left: 18.5rem */
-}
-.first-div {
-    width: 80%;
-}
-.first-div2 {
-    width: 80%;
-}
-.section {
-    width: 80%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.section .div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(0, 98, 155);
-    margin: 8px 4px;
-}
-.price2 {
-    margin-top: -1px;
-}
- .name {
-    /* max-width: 100%; */
-    /* margin-bottom: 1rem; */
-}
-.section-2 {
-    display: flex;
-    /* flex-direction: column; */
-    gap: 6rem;
-    align-items: center;
-    width: 80%;
-    /* margin-left: 2rem; */
-}
-#name {
-    margin-bottom: 1rem;
-}
-}
 @media (max-width: 625px) {
     main {
         width: 100%;
@@ -538,14 +483,13 @@ textarea {
 .line-Wrapper{
     display: flex;
     max-width: 80%;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     margin-right: .5rem;
 }
 .line {
     width: 330px;
     height: 1px;
     background-color: rgb(8, 40, 223);
-
 }
 .first-div2 {
     width: 80%;
@@ -580,5 +524,76 @@ textarea {
     align-items: center;
     width: 80%;
     /* margin-left: 2rem; */
+}
+}
+@media (max-width: 720px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.head {
+    max-width: 80%;
+}
+.line-Wrapper{
+    display: flex;
+    max-width: 80%;
+    /* justify-content: flex-end; */
+    margin-left: 4.5rem;
+}
+.line {
+    width: 350px;
+    height: 1px;
+    background-color: rgb(8, 40, 223);
+    /* margin-left: 18.5rem */
+}
+.first-div {
+    width: 80%;
+}
+.first-div2 {
+    width: 80%;
+}
+.section {
+    width: 80%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.section .div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 98, 155);
+    margin: 8px 4px;
+}
+.price2 {
+    margin-top: -1px;
+}
+ .name {
+    /* max-width: 100%; */
+    /* margin-bottom: 1rem; */
+}
+.section-2 {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 4rem;
+    align-items: center;
+    width: 80%;
+    /* margin-left: 2rem; */
+}
+#name {
+    margin-bottom: 1rem;
 }
 }
